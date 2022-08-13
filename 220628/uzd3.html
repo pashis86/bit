@@ -1,0 +1,40 @@
+<!-- Naudokite funkciją ir sukurkite tris kintamuosius kuriems priskirkite atsitiktines 
+    reikšmes nuo 0 iki 25. Raskite ir atspausdinkite kintąmąjį turintį vidurinę reikšmę.
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
+        }
+
+        let sk1 = getRandomInt(0, 25)
+        let sk2 = getRandomInt(0, 25)
+        let sk3 = getRandomInt(0, 25)
+
+        if(sk1 > sk2) {
+            console.log ((sk1 / sk2).toFixed(2));
+
+        } 
+
+        else if(sk1 = sk2) {
+            console.log('=');
+
+        } 
+
+        else {
+            console.log((sk2 / sk1).toFixed(2));
+        }
+    </script>
+</body>
+</html>

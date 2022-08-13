@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        str = '“An American in Paris”';
+        console.log('Original String: ', str);
+        newStr = str.replaceAll(/A/g, '').replaceAll(/a/g, '').replaceAll(/E/g, '').replaceAll(/e/g, '').replaceAll(/I/g, '').replaceAll(/i/g, '').replaceAll(/Y/g, '').replaceAll(/y/g, '').replaceAll(/O/g, '').replaceAll(/o/g, '').replaceAll(/U/g, '').replaceAll(/u/g, '');
+        console.log('After character removed: ', newStr);
+        
+        str = ' “Breakfast at Tiffany`s”';
+        console.log('Original String: ', str);
+        newStr = str.replaceAll(/A/g, '').replaceAll(/a/g, '').replaceAll(/E/g, '').replaceAll(/e/g, '').replaceAll(/I/g, '').replaceAll(/i/g, '').replaceAll(/Y/g, '').replaceAll(/y/g, '').replaceAll(/O/g, '').replaceAll(/o/g, '').replaceAll(/U/g, '').replaceAll(/u/g, '');
+        console.log('After character removed: ', newStr);
+
+        str = '“2001: A Space Odyssey”';
+        console.log('Original String: ', str);
+        newStr = str.replaceAll(/A/g, '').replaceAll(/a/g, '').replaceAll(/E/g, '').replaceAll(/e/g, '').replaceAll(/I/g, '').replaceAll(/i/g, '').replaceAll(/Y/g, '').replaceAll(/y/g, '').replaceAll(/O/g, '').replaceAll(/o/g, '').replaceAll(/U/g, '').replaceAll(/u/g, '');
+        console.log('After character removed: ', newStr);
+
+        str = '“It`s a Wonderful Life”';
+        console.log('Original String: ', str);
+        newStr = str.replaceAll(/A/g, '').replaceAll(/a/g, '').replaceAll(/E/g, '').replaceAll(/e/g, '').replaceAll(/I/g, '').replaceAll(/i/g, '').replaceAll(/Y/g, '').replaceAll(/y/g, '').replaceAll(/O/g, '').replaceAll(/o/g, '').replaceAll(/U/g, '').replaceAll(/u/g, '');
+        console.log('After character removed: ', newStr);
+    </script>
+</body>
+</html>

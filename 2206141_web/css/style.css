@@ -1,0 +1,236 @@
+/* 
+text-transform: uppercase; Konvertuoja visas raides i didžiąsias
+text-transform: lowercase; Konvertuoja visas raides į mažąsias 
+text-teransform: capitalize; Konvertuoja kiekvieno žodžio pirmają raidę į didžiają
+*/
+
+* {
+    box-sizing:  border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: purple;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo img {
+    width: 120px;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.header-row {
+    padding: 18px 0 10px;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navigation ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 18px;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.navigation ul li a:hover {
+    opacity: 1;
+}
+
+.intro {
+    background: url('../img/hero-bg-1.jpg') no-repeat center center / cover;
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+}
+
+.intro-container {
+    padding-top: 90px;
+    padding-bottom: 0;
+}
+
+.introText {
+    color: white;
+    width: 50%;
+}
+
+.introText h4 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 0;
+}
+
+.introText h2 {
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.introText p {
+    font-size: 20px;
+}
+
+.introImage {
+    width: 40%;
+}
+
+.introImage img {
+    max-width: 100%;
+}
+
+.buttonHolder {
+    padding-top: 10px;
+}
+
+.button {
+    color: white;
+    font-weight: 700;
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid white;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    background: white;
+    color: rgb(57, 51, 173);
+}
+
+.counter {
+    position: relative;
+    bottom: -60px;
+}
+.counter-wrap{
+    background: #ffffff;
+    width: 100%;
+    display: block;
+    padding: 30px 0;
+    border-radius: 6px;
+    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.12);
+}
+
+.counter-wrap{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(255px,1fr));
+}
+
+.counter-wrap li{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+    border-right: 1px solid #ebebeb;
+    margin: 10px 0 !important;
+}
+.counter-wrap li:last-child{
+    border-right: none;
+    margin-right: 0 !important;
+}
+.single-counter span{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    color: #9629e6;
+    font-size: 25px;
+    line-height: 28px;
+}
+.single-promo span{
+    font-size: 70px;
+    line-height: inherit;
+    margin-bottom: 20px;
+}
+.single-promo-1{
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 1.5rem !important;
+}
+.single-promo-1 span{
+    font-size: 35px;
+    background-image: url("../img/promo-icon-bg.svg");
+    background-size: 150px;
+    padding: 35px;
+    background-repeat: no-repeat;
+    background-position: 45% 20%;
+}
+.single-promo img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.single-promo .img-full-box{
+    width: auto !important;
+    height: auto !important;
+}
+.single-promo-hover{
+    transition: all .2s ease-out;
+    will-change: transform;
+}
+.single-promo-hover:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 1rem 3rem rgba(31,45,61,.125)!important;
+}
+.single-promo-card{
+    transition: all .2s ease;
+    box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.12);
+}
+.card.single-promo-card{
+    border: 1px solid #eff2f7;
+    border-radius: 1rem;
+}
+.card.single-promo-card:hover{
+    background: #6730e3;
+    color: #ffffff;
+}
+.card.single-promo-card:hover  span, .card.single-promo-card:hover h5, .card.single-promo-card:hover p.text-muted{
+    color: #ffffff !important;
+}
+.single-promo-card .card-body{
+    padding: 1.5rem;
+}
